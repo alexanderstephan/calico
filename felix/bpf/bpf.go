@@ -291,7 +291,7 @@ func getCIDRMapName(ifName string, family IPFamily) string {
 }
 
 func getProgName(ifName string) string {
-	return fmt.Sprintf("%s_%s_%s", xdpProgVersion, ifName)
+	return fmt.Sprintf("%s_%s_%s", xdpProgName, xdpProgVersion, ifName)
 }
 
 func newMap(name, path, kind string, entries, keySize, valueSize, flags int) (string, error) {
